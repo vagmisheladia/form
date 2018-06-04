@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8" />
+      <title>Form</title>
+      <style>
+         form{padding: 15px}
+         label{display: inline-block; text-align: right; width:60px; padding-right:5px;}
+         input[type=submit]{margin-top: 20px;}
+         .error{color: red; margin-left: 10px;}
+      </style>
+   </head>
+   <body>
+      <form action="" method="post" id ="resistrationForm">
+         <div>
+            <label>UserName:</label><br>
+            <input type="text" name="username" id="username" placeholder="Username">
+         </div>
+         <div>
+            <label>Password:</label><br>
+            <input type="text" name="password" id="password" placeholder="Password">
+         </div>
+         <div>
+           <label>EmailId:</label><br>
+            <input type="email" name="email" id="email" placeholder="EmailId">
+         </div>
+         <div>
+            <label>Location:</label><br>
+            <input type="text" name="location" id="location" placeholder="Location">
+         </div>
+         <div>
+            <label>Company:</label><br>
+            <input type="text" name="company" id="company" placeholder="Company">
+         </div>
+         <div>
+         <div id="genderDv">
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" value="male"> Male<br>
+            <input type="radio" name="gender" value="female"> Female<br>
+         </div>
+         <div>
+         <input type="button" id="btnSubmit" value="submit"/>
+      </form>
+      <br/>
+      <br/>
+      <br/>
+      <div>
+         <table border="1" id="empTable">
+            <tr>
+               <th>Username</th>
+               <th>Password</th>
+               <th>email</th>
+               <th>Location</th>
+               <th>Company</th>
+               <th>Gender</th>
+            </tr>
+         </table>
+      </div>
+<script type="text/javascript" src="form.js"></script>
+   </body>
+</html>
